@@ -9,7 +9,7 @@ import Stats from './Stats';
 import Pricing from './Pricing';
 import OpenAcoount from '../OpenAcoount';
 import Education from './Education';
-
+import API_BASE_URL from "../api";
 
 function HomePage() {
     const navigate = useNavigate();
@@ -21,7 +21,7 @@ function HomePage() {
                 navigate('/');
             }
             const {data} = await axios.post(
-                "http://localhost:8000",
+                `${API_BASE_URL}`,
                 {},
                 {withCredentials:true}
             );

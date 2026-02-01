@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
+import API_BASE_URL from "../api";
 
 const SingupComponent = () => {
   const navigate = useNavigate();
@@ -38,7 +39,7 @@ const SingupComponent = () => {
       console.log("Sending data:", inputValue); // Debug log
       
       const { data } = await axios.post(
-        "http://localhost:8000/signup", // ✅ Fixed route (added /auth)
+        `${API_BASE_URL}/singup`, // ✅ Fixed route (added /auth)
         {
           ...inputValue,
         },

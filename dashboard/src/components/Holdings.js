@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios, { all } from "axios";
 import { VerticalGraph } from "./VerticalGraph";
-
+import API_BASE_URL from "../api";
 // import { holdings } from "../data/data";
 
 const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/allholdings").then((res) => {
+    axios.get(`${API_BASE_URL}/allholdings`).then((res) => {
       console.log(res.data);
       setAllHoldings(res.data);
     });
