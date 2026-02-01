@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.space{
+  margin-top: 30vh;
+}
+
+.anchor{
+  text-decoration: none;
+  text-align: center;
+  color:#444;
+}
+
+.anchor-new{
+  text-decoration: none;
+  
+  color: rgba(50, 50, 224, 0.87);
+  font-size: medium;
+}
+
+.custom-margin{
+  margin-top: 20vh !important;
+}
+
+.logo-uni{
+  height: 8vh;
+  width: 15vw;
+}
+
+.tab-head{
+  color: rgb(67, 67, 227);
+  display: inline;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  cursor: pointer;
+  
+}
+.tab-head:hover{
+  color: #444;
+  border-bottom: 4px sloid blue;
+}
+.table tr,.table tr td {
+  padding: 2%;
+}
+.table{
+  margin-top: 3%;
+  border-top: 1 solid black;
+}
+
+.move-side{
+  margin-left: -22%;
+}
+.mt-10{
+  margin-top: 14%;
+}
+
+.icon{
+         position: absolute;
+    left: 87vw;
+    top: 32vh;
+    margin-right: 1%;
+    cursor: pointer;
+    width: 100px;
+
+
+
+}
+.bg-gray{
+  background-color: #f6f6f6;
+}
+
+.container-custom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+  height: 70vh;
+  width: 28vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+  padding: 2%;
+  box-shadow: #444;
+  border: 1px solid black;
+  
+}
