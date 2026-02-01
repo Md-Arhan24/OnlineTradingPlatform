@@ -16,7 +16,12 @@ const authRoute = require("./Routes/AuthRoute");
 
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
+    origin: [
+      "http://localhost:3000",
+      "http://localhost:8000",
+      "https://697f32f1c4c1ace7f9f26932--demo233.netlify.app",
+      "https://dashboarddemo23.netlify.app",
+    ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   }),
@@ -40,7 +45,7 @@ app.get("/allholdings", async (req, res) => {
 });
 
 //add posititons
-app.get("/allPositions", async (req, res) => {
+app.get("/allpositions", async (req, res) => {
   let data = await PositionModel.find({});
   res.json(data);
 });
